@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/form','FormController');
+Route::get('/search/{searchKey}','HomeController@search');

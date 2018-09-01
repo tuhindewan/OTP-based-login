@@ -11,6 +11,11 @@ class User extends Authenticatable
     use Notifiable;
     use Searchable;
 
+    public function searchableAs()
+        {
+            return 'name';
+        }
+
     /**
      * The attributes that are mass assignable.
      *
